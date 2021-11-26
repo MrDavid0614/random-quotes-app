@@ -1,0 +1,10 @@
+.author-quotes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-quotes {
+    display: grid;
+    gap: 50px;
+}

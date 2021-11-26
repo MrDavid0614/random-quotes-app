@@ -1,0 +1,49 @@
+.quote-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.quote-info {
+    align-items: center;
+    color: #4f4f4f;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: .3px;
+    margin-left: 50px;
+    padding: 30px 20px 20px 20px;
+    transition: all 500ms ease;
+    width: 550px;
+}
+
+.quote-info__author {
+    color: inherit;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.quote-info__genre {
+    color: #828282;
+}
+
+.quote-info:hover {
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+.quote-info:hover > .arrow-icon {
+    animation: arrow-animation 1.2s infinite ease;
+}
+
+@keyframes arrow-animation {
+    from {
+        transform: translateX(-10px);
+    }
+
+    to {
+        margin-left: translateY(15px);
+    }
+}
